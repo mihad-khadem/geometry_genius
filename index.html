@@ -18,12 +18,55 @@
         <!-- div container  -->
         <div class="flex flex-col lg:flex-row">
             <!-- Shape Container -->
-            <div class="flex-1">
-
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="images/rectangle.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Rectangle</h2>
+                        <p></p>
+                        <p>
+                            <input type="text" class="border w-24 px-2" placeholder="" id="">
+                            <span class="ml-2">cm</span>
+                         </p>
+                    </div>
+                </div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Parallelogram</h2>
+                        <p>Area (A) = 0.5 X b x h</p>
+                        <p>
+                            <input type="text" class="border w-24 px-2" placeholder="" id="">
+                            <span class="ml-3">cm</span>
+                         </p>
+                    </div>
+                </div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                     <h2 class="card-title">Triangle</h2>
+                     <p>Area (A) = 0.5 X b x h</p>
+                     <p>
+                        <input type="text" class="border w-24 px-2 bg-gray-100 rounded-md" placeholder="b" id="tri-b">
+                        <span class="ml-2">cm</span>
+                        <input type="text" class="border w-24 px-2 bg-gray-100 rounded-md" placeholder="h" id="tri-h">
+                        <span class="ml-2">cm</span>
+                     </p>
+                     <p >Area : <span id="tri-result" class="font-semibold"></span> cm</p>
+                     <button onclick="calculateTriangleArea()" class="btn bg-yellow-300 text-white hover:text-black mt-2">Calculate</button>
+                     
+                    </div>
+                </div>
             </div>
             <!-- Area Container -->
             <div class="">
-
+                <h2 class="text-2xl">Area Container</h2>
             </div>
             <div>
 
